@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/lectureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="lecture #"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/lecture_number"
+            android:layout_toEndOf="@id/lectureLabel"
+            android:layout_toRightOf="@id/lectureLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/topicText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lectureLabel"
+            android:fontFamily="sans-serif-light"
+            android:text="Topic:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_marginTop="1dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_below="@id/lecture_number"
+            android:layout_toEndOf="@id/topicText"
+            android:layout_toRightOf="@id/topicText"
+            android:fontFamily="sans-serif-medium"
+            android:text="chapter 1"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/lectureDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topicText"
+            android:fontFamily="sans-serif-light"
+            android:text="Date:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lectureDate"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topic"
+            android:layout_toEndOf="@id/lectureDateText"
+            android:layout_toRightOf="@id/lectureDateText"
+            android:fontFamily="sans-serif-medium"
+            android:text="11/9/2019"
+            android:paddingEnd="10dp"
+            android:layout_marginLeft="5dp"
+            android:paddingStart="10dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/lectureDateText"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

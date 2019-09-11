@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_main_gradient"
+    tools:context=".Activity_Student_Selected_Assignment">
+
+    <!-- Top Bar -->
+    <RelativeLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/faculty_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/image_faculty_logo" />
+
+        <TextView
+            android:id="@+id/faculty_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/faculty_logo"
+            android:layout_toRightOf="@+id/faculty_logo"
+            android:text="كلية الحاسبات والمعلومات"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assignment_course_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/faculty_name"
+            android:layout_toEndOf="@id/faculty_logo"
+            android:layout_toRightOf="@+id/faculty_logo"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"
+            android:text="Introduction to Computer Science"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/assignment_course_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assignment_course_name"
+            android:layout_toEndOf="@id/faculty_logo"
+            android:layout_toRightOf="@+id/faculty_logo"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="end"
+            android:text="CSE 120"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/faculty_logo"
+            android:background="@color/colorAccent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/assignment_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topBar"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/assignment_selected_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Chapter 1 topic 1.1"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:text="- Press next to view the next question after answering current question"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/faculty_logo"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorAccent" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/AssignmentFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/assignment_notes"
+        android:layout_above="@id/nextButton" />
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/style_button_fill_brown"
+        android:padding="25dp"
+        android:layout_alignParentBottom="true"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

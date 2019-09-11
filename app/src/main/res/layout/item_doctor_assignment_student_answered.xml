@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+
+        <TextView
+            android:id="@+id/assignment_student_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text="Mahmoud Badawy"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/assignment_answered_studentIDTEXT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assignment_student_name"
+            android:fontFamily="sans-serif-light"
+            android:text="Student ID:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/assignment_answered_studentID"
+            android:layout_width="wrap_content"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assignment_student_name"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/assignment_answered_studentIDTEXT"
+            android:layout_toRightOf="@id/assignment_answered_studentIDTEXT"
+            android:fontFamily="sans-serif-medium"
+            android:text="010"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/ScoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assignment_answered_studentID"
+            android:fontFamily="sans-serif-light"
+            android:text="Score:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="wrap_content"
+            android:padding="1dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/assignment_answered_studentID"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@id/ScoreText"
+            android:layout_toRightOf="@id/ScoreText"
+            android:fontFamily="sans-serif-medium"
+            android:text="4"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/ScoreText"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
